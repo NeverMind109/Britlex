@@ -1,0 +1,136 @@
+// ≥992px
+@include media-breakpoint-down(lg) {
+  .logo {
+    height: 45px;
+    &__img {
+      width: 89px;
+      height: 45px;
+    }
+  }
+  .menu {
+    &-list__link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .menu-list__item + .menu-list__item {
+    margin-left: 30px;
+  }
+  .header {
+    margin: 25px 0 65px;
+    &__btn {
+      max-width: 170px;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000000;
+      padding: 12px 40px;
+    }
+  }
+}
+// ≥768px
+@include media-breakpoint-down(md) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+  .menu {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding-top: 10px;
+    max-height: 100vh;
+    height: auto;
+    min-width: 320px;
+    top: 140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: translateX(-300%);
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    z-index: 20;
+    &-list {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &-list__item {
+      align-items: flex-start;
+      padding: 13px 0 15px;
+    }
+    &-list__link {
+      font-size: 24px;
+      line-height: 28px;
+      margin-right: 0;
+      color: #263238;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: #263238;
+      }
+    }
+    &__register {
+      display: flex;
+      padding: 35px 0;
+    }
+    &__mobile {
+      display: flex;
+    }
+    &--active {
+      transform: translateY(0);
+      overflow-y: scroll;
+    }
+  }
+  .menu-list__item + .menu-list__item {
+    margin-left: 0;
+  }
+}
+// ≥576px
+@include media-breakpoint-down(sm) {
+  .header {
+    margin: 39px 0 21px;
+  }
+  .menu {
+    &__mobile {
+      width: 43px;
+      height: 24px;
+      &-line {
+        width: 43px;
+        height: 5px;
+        margin-bottom: 5px;
+        &--short {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+// <576px
+@media (max-width: 320px) {
+  .logo {
+    height: 36px;
+    &__img {
+      width: 71px;
+      height: 36px;
+    }
+  }
+  .menu {
+    &__mobile {
+      width: 34px;
+      height: 19px;
+      &-line {
+        width: 34px;
+        height: 4px;
+        &--short {
+          width: 24px;
+        }
+      }
+    }
+  }
+  .header {
+    margin: 36px 0 29px;
+  }
+}
