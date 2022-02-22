@@ -17,13 +17,46 @@
     margin-left: 30px;
   }
   .header {
-    margin: 25px 0 65px;
+    padding: 25px 0 65px;
     &__btn {
       max-width: 170px;
       font-size: 18px;
       line-height: 27px;
       color: #000000;
       padding: 12px 40px;
+    }
+  }
+  .hero {
+    padding-bottom: 47px;
+    &__title {
+      font-size: 48px;
+      line-height: 64px;
+      margin-bottom: 27px;
+      &::after {
+        width: 48px;
+        height: 70px;
+        right: 5px;
+      }
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 33px;
+    }
+    &__btn {
+      max-width: 300px;
+      font-size: 24px;
+      line-height: 36px;
+      padding: 22px 79px;
+      border-radius: 5px;
+    }
+    &__image {
+      max-width: 422px;
+      height: 337px;
+    }
+    &__img {
+      max-width: 422px;
+      height: 337px;
     }
   }
 }
@@ -38,11 +71,12 @@
     display: flex;
     position: absolute;
     justify-content: center;
-    padding-top: 10px;
+    padding: 22px 15px 0 40px;
     max-height: 100vh;
     height: auto;
+    width: 430px;
     min-width: 320px;
-    top: 140px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -58,7 +92,7 @@
     }
     &-list__item {
       align-items: flex-start;
-      padding: 13px 0 15px;
+      margin: 13px 0 15px;
     }
     &-list__link {
       font-size: 24px;
@@ -72,9 +106,38 @@
         color: #263238;
       }
     }
+    &__logo {
+      display: flex;
+      position: relative;
+      margin: 17px 0 57px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 364px;
+        height: 1px;
+        left: 0;
+        bottom: -21px;
+        background: #c4c4c4;
+      }
+    }
     &__register {
       display: flex;
-      padding: 35px 0;
+      margin: 62px 0 0;
+      padding-bottom: 30px;
+    }
+    &-list__btn {
+      max-width: 210px;
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000000;
+      background-color: #fff;
+      border: 2px solid #263238;
+      border-radius: 5px;
+      padding: 16px 60px;
     }
     &__mobile {
       display: flex;
@@ -87,11 +150,45 @@
   .menu-list__item + .menu-list__item {
     margin-left: 0;
   }
+  .hero {
+    padding-bottom: 56px;
+    &__title {
+      max-width: 217px;
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 25px;
+      &::after {
+        width: 42px;
+        height: 65px;
+        right: -45px;
+        bottom: 15px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 32px;
+    }
+    &__btn {
+      max-width: 250px;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 19px 67px;
+    }
+    &__image {
+      max-width: 323px;
+      height: 260px;
+    }
+    &__img {
+      max-width: 323px;
+      height: 260px;
+    }
+  }
 }
 // ≥576px
 @include media-breakpoint-down(sm) {
   .header {
-    margin: 39px 0 21px;
+    padding: 39px 0 21px;
   }
   .menu {
     &__mobile {
@@ -105,6 +202,38 @@
           width: 30px;
         }
       }
+    }
+  }
+  .hero {
+    padding-bottom: 96px;
+    &__information {
+      text-align: center;
+    }
+    &__title {
+      max-width: 100%;
+      font-size: 34px;
+      line-height: 45px;
+      margin: 0 auto 26px;
+      &::after {
+        display: none;
+      }
+    }
+    &__text {
+      margin-bottom: 37px;
+    }
+    &__btn {
+      max-width: 310px;
+      padding: 18px 90px;
+    }
+    &__image {
+      order: -1;
+      max-width: 389px;
+      height: 311px;
+      margin: 0 auto 17px;
+    }
+    &__img {
+      max-width: 389px;
+      height: 311px;
     }
   }
 }
@@ -131,6 +260,32 @@
     }
   }
   .header {
-    margin: 36px 0 29px;
+    padding: 36px 0 29px;
+  }
+  .hero {
+    padding-bottom: 51px;
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+      margin: 0 auto 20px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 35px;
+    }
+    &__btn {
+      max-width: 100%;
+      padding: 18px 90px;
+    }
+    &__image {
+      max-width: 274px;
+      height: 219px;
+      margin: 0 auto 16px;
+    }
+    &__img {
+      max-width: 274px;
+      height: 219px;
+    }
   }
 }

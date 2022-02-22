@@ -33,7 +33,7 @@ body {
   min-width: 320px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #8f95a5;
@@ -74,6 +74,9 @@ body {
     &:hover {
       color: #8f95a5;
     }
+  }
+  &__logo {
+    display: none;
   }
   &__register {
     display: none;

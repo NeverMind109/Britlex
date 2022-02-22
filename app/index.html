@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Britlex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,15 @@
           </a>
           <nav class="menu col-md-7">
             <ul class="menu-list">
+              <a class="menu-list__item logo menu__logo" href="#home">
+                <img
+                  class="logo__img"
+                  src="images/Logo.svg"
+                  alt="Logo"
+                  width="106"
+                  height="54"
+                />
+              </a>
               <li class="menu-list__item">
                 <a href="#home" class="menu-list__link">Home</a>
               </li>
@@ -44,18 +53,43 @@
                 <a href="#contacts" class="menu-list__link">Contacts</a>
               </li>
               <li class="menu-list__item menu__register">
-                <a href="#contacts" class="menu-list__link">Let's Talk</a>
+                <button class="header__btn menu-list__btn" type="button">
+                  Let's Talk
+                </button>
               </li>
             </ul>
           </nav>
-          <button class="menu__mobile">
+          <button class="menu__mobile" type="button">
             <div class="menu__mobile-line"></div>
             <div class="menu__mobile-line"></div>
             <div class="menu__mobile-line menu__mobile-line--short"></div>
           </button>
-          <button class="header__btn col-md-3">Let's Talk</button>
+          <button class="header__btn col-md-3" type="button">Let's Talk</button>
         </div>
       </header>
+      <main class="content">
+        <section class="hero">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="hero__information col-sm-6">
+              <h1 class="hero__title">Learn Any&nbspForeign Language</h1>
+              <p class="hero__text">
+                With our teachers who write a program for each student, you will
+                be able to make your first sketch after the first lesson.
+              </p>
+              <button class="hero__btn" type="button">Get started</button>
+            </div>
+            <div class="hero__image col-sm-6">
+              <img
+                class="hero__img"
+                src="images/hero-img.svg"
+                alt="Learn Any Foreign Language"
+                width="607"
+                height="485"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="js/main.min.js"></script>
   </body>
