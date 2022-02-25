@@ -91,8 +91,8 @@ body {
   &__register {
     display: none;
   }
-  &__mobile {
-    display: none;
+  &__mobile-btn {
+    display: flex;
     flex-direction: column;
     width: 30px;
     height: 17px;

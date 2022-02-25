@@ -56,19 +56,29 @@
               </li>
               <li class="menu-list__item menu__register">
                 <button class="header__btn menu-list__btn" type="button">
-                  Let's Talk
+                  <span class="header__btn-text">Let's Talk</span>
                 </button>
               </li>
               <div class="menu__close-button"></div>
             </ul>
           </nav>
           <div class="menu__mobile-layout"></div>
-          <button class="menu__mobile" type="button">
-            <div class="menu__mobile-line"></div>
-            <div class="menu__mobile-line"></div>
-            <div class="menu__mobile-line menu__mobile-line--short"></div>
-          </button>
-          <button class="header__btn col-md-3" type="button">Let's Talk</button>
+          <div class="menu__mobile d-flex justify-content-end d-md-none col-3">
+            <button class="menu__mobile-btn" type="button">
+              <div class="menu__mobile-btn-line"></div>
+              <div class="menu__mobile-btn-line"></div>
+              <div
+                class="menu__mobile-btn-line menu__mobile-btn-line--short"
+              ></div>
+            </button>
+          </div>
+          <div
+            class="header__button d-none d-md-flex justify-content-end col-md-3"
+          >
+            <button class="header__btn" type="button">
+              <span class="header__btn-text">Let's Talk</span>
+            </button>
+          </div>
         </div>
       </header>
       <main class="content">
@@ -80,7 +90,11 @@
                 With our teachers who write a program for each student, you will
                 be able to make your first sketch after the first lesson.
               </p>
-              <button class="hero__btn" type="button">Get started</button>
+              <div class="hero__button">
+                <button class="hero__btn" type="button">
+                  <span class="hero__btn-text">Get started</span>
+                </button>
+              </div>
             </div>
             <div class="hero__image col-sm-6">
               <img
@@ -90,6 +104,96 @@
                 width="607"
                 height="485"
               />
+            </div>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title skills__title">Skills</h2>
+          <div class="skills-cards">
+            <div class="skills-card skills-card-1">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-speaking.svg"
+                  alt="Speaking"
+                  width="390"
+                  height="390"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Speaking</h5>
+                <p class="skills-card__text">
+                  Improve your English skills and confidence.Live classes and
+                  interactive lessons online. 20% extra free for a limited time
+                  only.
+                </p>
+                <br />
+                <p class="skills-card__text">
+                  Learn English online and improve your skills through our
+                  high-quality courses and resources – all designed for adult
+                  language learners.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-2">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-writing.svg"
+                  alt="Writing"
+                  width="293"
+                  height="293"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Writing</h5>
+                <p class="skills-card__text">
+                  One of the most important and extensive areas of natural
+                  science, the science that studies substances, also their
+                  composition.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-3">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-reading.svg"
+                  alt="Reading"
+                  width="371"
+                  height="247"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Reading</h5>
+                <p class="skills-card__text">
+                  Perception and response actions of the user resulting from the
+                  use and/or upcoming use of the product, system or service.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-4">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img d-flex order-md-1"
+                  src="images/skills-listening.svg"
+                  alt="Listening"
+                  width="382"
+                  height="255"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Listening</h5>
+                <p class="skills-card__text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                  .
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
             </div>
           </div>
         </section>
