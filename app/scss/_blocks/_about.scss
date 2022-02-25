@@ -1,0 +1,30 @@
+.about {
+  padding-bottom: 188px;
+  &__title {
+    margin-bottom: 23px;
+    text-align: left;
+  }
+  &__text {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  &__columns {
+    text-align: center;
+  }
+  &__column-number {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #2a3246;
+  }
+  &__image {
+    width: 474px;
+    height: 432px;
+    margin-top: -140px;
+  }
+  &__img {
+    width: 474px;
+    height: 432px;
+    object-fit: contain;
+  }
+}
