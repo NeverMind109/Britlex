@@ -1,7 +1,5 @@
 .skills {
-  padding-bottom: 250px;
   &__title {
-    text-align: center;
     margin: 0 auto 92px;
   }
   &-cards {
@@ -22,30 +20,18 @@
       height: 100%;
       justify-content: center;
       .skills-card__body {
-        padding: 0 44px 92px;
         margin-top: 4px;
       }
       .skills-card__image {
         height: 390px;
-        margin: 0 auto;
       }
     }
     &-2 {
-      .skills-card__body {
-        padding: 0 20px 43px;
-      }
       .skills-card__image {
-        height: 293px;
-        margin-left: auto;
+        justify-content: flex-end;
       }
-    }
-    &-3 {
-      .skills-card__body {
-        padding: 0 20px 43px;
-      }
-      .skills-card__image {
-        height: 247px;
-        margin-right: auto;
+      .skills-card__img {
+        width: auto;
       }
     }
     &-4 {
@@ -53,16 +39,23 @@
       display: flex;
       flex-direction: row;
       .skills-card__body {
-        width: 60%;
+        width: 100%;
         padding: 44px 25px 70px 50px;
       }
       .skills-card__image {
-        height: 255px;
         order: 1;
-        margin: auto 0;
       }
     }
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      width: 100%;
+    }
     &__img {
+      width: 100%;
+      height: 100%;
       object-fit: contain;
     }
     &__body {
@@ -70,6 +63,7 @@
       flex-direction: column;
       margin-top: auto;
       text-align: left;
+      padding: 0 20px 40px 40px;
     }
     &__title {
       font-weight: 600;
@@ -80,6 +74,7 @@
     &__text {
       font-size: 16px;
       line-height: 24px;
+      word-break: break-word;
     }
     &__btn {
       font-family: "Poppins", sans-serif;
