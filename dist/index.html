@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britlex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="home">
+        <div class="row d-flex justify-content-between align-items-center">
+          <a class="logo col-6 col-sm-4 col-md-2" href="#home">
+            <img
+              class="logo__img"
+              src="images/Logo.svg"
+              alt="Logo"
+              width="106"
+              height="54"
+            />
+          </a>
+          <nav class="menu col-md-7">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a
+                  class="menu-list__item logo menu__logo scroll-to"
+                  href="#home"
+                >
+                  <img
+                    class="logo__img"
+                    src="images/logo.svg"
+                    alt="Logo"
+                    width="106"
+                    height="54"
+                  />
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#home" class="menu-list__link scroll-to">Home</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#skills" class="menu-list__link scroll-to">Skills</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#about" class="menu-list__link scroll-to">About Us</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#pricing" class="menu-list__link scroll-to">Pricing</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#contacts" class="menu-list__link scroll-to"
+                  >Contacts</a
+                >
+              </li>
+              <li class="menu-list__item menu__register">
+                <button class="header__btn menu-list__btn" type="button">
+                  <span class="header__btn-text">Let's Talk</span>
+                </button>
+              </li>
+              <div class="menu__close-button"></div>
+            </ul>
+          </nav>
+          <div class="menu__mobile-layout"></div>
+          <div class="menu__mobile d-flex justify-content-end d-md-none col-3">
+            <button
+              class="menu__mobile-btn"
+              type="button"
+              aria-label="Mobile Menu"
+            >
+              <div class="menu__mobile-btn-line"></div>
+              <div class="menu__mobile-btn-line"></div>
+              <div
+                class="menu__mobile-btn-line menu__mobile-btn-line--short"
+              ></div>
+            </button>
+          </div>
+          <div
+            class="header__button d-none d-md-flex justify-content-end col-md-3"
+          >
+            <button class="header__btn" type="button">
+              <span class="header__btn-text">Let's Talk</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="hero">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="hero__information col-sm-6 order-sm-o order-1">
+              <h1 class="hero__title">Learn Any&nbspForeign Language</h1>
+              <p class="hero__text">
+                With our teachers who write a program for each student, you will
+                be able to make your first sketch after the first lesson.
+              </p>
+              <div class="hero__button">
+                <button class="hero__btn" type="button">
+                  <span class="hero__btn-text">Get started</span>
+                </button>
+              </div>
+            </div>
+            <div class="hero__image col-sm-6 order-sm-1 order-0">
+              <img
+                class="hero__img"
+                src="images/hero-img.svg"
+                alt="Learn Any Foreign Language"
+                width="607"
+                height="485"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title skills__title">Skills</h2>
+          <div class="skills-cards">
+            <div class="skills-card skills-card-1">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-speaking.svg"
+                  alt="Speaking"
+                  width="390"
+                  height="390"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Speaking</h5>
+                <p class="skills-card__text">
+                  Improve your English skills and confidence.Live classes and
+                  interactive lessons online. 20% extra free for a limited time
+                  only.
+                </p>
+                <br />
+                <p class="skills-card__text">
+                  Learn English online and improve your skills through our
+                  high-quality courses and resources – all designed for adult
+                  language learners.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-2">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-writing.svg"
+                  alt="Writing"
+                  width="293"
+                  height="293"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Writing</h5>
+                <p class="skills-card__text">
+                  One of the most important and extensive areas of natural
+                  science, the science that studies substances, also their
+                  composition.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-3">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img"
+                  src="images/skills-reading.svg"
+                  alt="Reading"
+                  width="371"
+                  height="247"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Reading</h5>
+                <p class="skills-card__text">
+                  Perception and response actions of the user resulting from the
+                  use and/or upcoming use of the product, system or service.
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="skills-card skills-card-4">
+              <div class="skills-card__image">
+                <img
+                  class="skills-card__img d-flex order-md-1"
+                  src="images/skills-listening.svg"
+                  alt="Listening"
+                  width="382"
+                  height="255"
+                />
+              </div>
+              <div class="skills-card__body">
+                <h5 class="skills-card__title">Listening</h5>
+                <p class="skills-card__text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                  .
+                </p>
+                <a class="skills-card__btn" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="row d-flex justify-content-between align-items-center">
+            <h2 class="section-title about__title order-0">About Us</h2>
+            <div class="about__information order-2 order-sm-1 col-sm-6 col-12">
+              <p class="about__text">
+                The model offers a framework for discussing problems related to
+                the user's experience, as well as possible ways and means of
+                solving them. Application development begins at the top level
+                (strategy), where the future software product is described quite
+                abstractly from the point of view of the expectations of both
+                users and the customer.
+              </p>
+              <div
+                class="about__columns d-flex justify-content-sm-between justify-content-around align-items-sm-start col-12"
+              >
+                <div class="about__column d-flex flex-column col-sm-2 col-md-2">
+                  <span class="about__column-number align-items-center"
+                    >800</span
+                  >
+                  <span class="about__column-text">Pupils</span>
+                </div>
+                <div class="about__column d-flex flex-column col-sm-2 col-md-3">
+                  <span class="about__column-number align-items-center"
+                    >18</span
+                  >
+                  <span class="about__column-text">Teachers</span>
+                </div>
+                <div class="about__column d-flex flex-column col-sm-5 col-md-4">
+                  <span class="about__column-number align-items-center">6</span>
+                  <span class="about__column-text">Foreign&nbsplanguages</span>
+                </div>
+              </div>
+            </div>
+            <div class="about__image order-1 order-sm-2 col-sm-6 col-12">
+              <img
+                class="about__img"
+                src="images/about-image.svg"
+                alt="About Us"
+                width="474"
+                height="432"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="pricing" id="pricing">
+          <h2 class="section-title pricing__title">Pricing</h2>
+          <div
+            class="row d-flex justify-content-sm-between align-items-sm-stretch flex-sm-row flex-column align-items-center"
+          >
+            <div
+              class="pricing-card pricing-card-1 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+            >
+              <div class="pricing-card__image">
+                <img
+                  class="pricing-card__img"
+                  src="images/pricing-self-study.svg"
+                  alt="Self-study online course"
+                  width="279"
+                  height="282"
+                />
+              </div>
+              <h5 class="pricing-card__title">Self-study online course</h5>
+              <p class="pricing-card__text">
+                Start learning English online in live classes with qualified EC
+                teachers and students from all over the world.
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__period"
+                  >£5.99
+                  <span class="pricing-card__value">per month</span></span
+                >
+              </div>
+            </div>
+            <div
+              class="pricing-card pricing-card-2 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+            >
+              <div class="pricing-card__image">
+                <img
+                  class="pricing-card__img"
+                  src="images/pricing-online.svg"
+                  alt="Live online classes"
+                  width="276"
+                  height="237"
+                />
+              </div>
+              <h5 class="pricing-card__title">Live online classes</h5>
+              <p class="pricing-card__text">
+                Interactive group classes with expert teachers. Free 7-day trial
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__period"
+                  >£12.99
+                  <span class="pricing-card__value">per month</span></span
+                >
+              </div>
+            </div>
+            <div
+              class="pricing-card pricing-card-3 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+            >
+              <div class="pricing-card__image">
+                <img
+                  class="pricing-card__img"
+                  src="images/pricing-tution.svg"
+                  alt="Personal Tuition"
+                  width="315"
+                  height="281"
+                />
+              </div>
+              <h5 class="pricing-card__title">Personal Tuition</h5>
+              <p class="pricing-card__text">
+                Online one-to-one English tutoring – enjoy our first session for
+                only $1
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__period"
+                  >£20.99
+                  <span class="pricing-card__value">per month</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="row d-flex justify-content-between align-items-center">
+            <h2
+              class="section-title contacts__title order-0 col-12 d-sm-none d-block"
+            >
+              Contact Us
+            </h2>
+            <div class="contacts__image col-12 col-sm-4 col-md-5">
+              <img
+                class="contacts__img"
+                src="images/contacts-img.svg"
+                alt="Contact Us"
+                width="396"
+                height="446"
+              />
+            </div>
+            <div class="contacts__information col-12 col-sm-8 col-md-7">
+              <h2 class="section-title contacts__title d-sm-flex d-none">
+                Contact Us
+              </h2>
+              <p class="contacts__text">
+                Discover your current English level by taking our free online
+                English test.Sign up to our newsletter for learning tips and
+                free resources
+              </p>
+              <form class="contacts__subscribe" action="#">
+                <label for="email" class="contacts__label"></label>
+                <input
+                  class="contacts__input"
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your E-mail"
+                  required
+                  minlength="6"
+                />
+                <button class="contacts__btn" type="submit">
+                  <div class="contacts__btn-text">Subscribe</div>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div
+          class="row footer__row d-flex justify-content-between align-items-center"
+        >
+          <a class="logo col-3" href="#home">
+            <img
+              class="logo__img"
+              src="images/Logo.svg"
+              alt="Logo"
+              width="106"
+              height="54"
+            />
+          </a>
+          <ul class="footer__list d-flex justify-content-end col-8">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms and Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
