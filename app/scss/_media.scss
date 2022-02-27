@@ -86,7 +86,7 @@
         }
       }
       &__image {
-        height: 210px;
+        max-height: 210px;
       }
       &__title {
         font-size: 22px;
@@ -116,7 +116,7 @@
     }
     &__image {
       width: 318px;
-      height: 290px;
+      max-height: 290px;
       margin-top: -215px;
     }
   }
@@ -129,7 +129,7 @@
   .pricing-card {
     max-width: 270px;
     &__image {
-      height: 270px;
+      max-height: 270px;
       margin-bottom: 15px;
     }
     &__title {
@@ -140,13 +140,48 @@
       margin: 14px 0 31px;
     }
     &__price {
-      width: 205px;
+      max-width: 205px;
     }
     &__period {
       font-size: 24px;
       line-height: 36px;
     }
     &__value {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .contacts {
+    padding-bottom: 160px;
+    &__title {
+      margin-bottom: 3px;
+    }
+    &__image {
+      height: 290px;
+    }
+    &__text {
+      margin-bottom: 34px;
+    }
+    &__subscribe {
+      max-width: 530px;
+    }
+    &__input {
+      height: 60px;
+      width: 323px;
+      padding: 23px 10px 16px 38px;
+      font-size: 14px;
+      line-height: 21px;
+      margin-right: 14px;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &__btn {
+      height: 60px;
+      width: 193px;
+    }
+    &__btn-text {
       font-size: 16px;
       line-height: 24px;
     }
@@ -320,7 +355,7 @@
         }
       }
       &__image {
-        height: 220px;
+        max-height: 220px;
       }
       &__body {
         padding: 0 10px 30px 17px;
@@ -350,7 +385,7 @@
       line-height: 19px;
     }
     &__image {
-      max-width: 279px;
+      width: 279px;
       max-height: 255px;
       margin-top: -135px;
     }
@@ -364,7 +399,7 @@
   .pricing-card {
     max-width: 220px;
     &__image {
-      height: 220px;
+      max-height: 220px;
     }
     &__title {
       font-size: 20px;
@@ -382,6 +417,41 @@
     }
     &__value {
       margin-left: 4px;
+    }
+  }
+  .contacts {
+    padding-bottom: 112px;
+    &__title {
+      margin-bottom: 0;
+    }
+    &__image {
+      height: 210px;
+    }
+    &__text {
+      margin-bottom: 26px;
+    }
+    &__subscribe {
+      max-width: 434px;
+    }
+    &__input {
+      height: 50px;
+      width: 283px;
+      padding: 16px 10px 16px 24px;
+      font-size: 12px;
+      line-height: 18px;
+      margin-right: 6px;
+      &::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    &__btn {
+      height: 50px;
+      width: 145px;
+    }
+    &__btn-text {
+      font-size: 13px;
+      line-height: 19px;
     }
   }
 }
@@ -454,7 +524,7 @@
       padding: 18px 90px;
     }
     &__image {
-      max-width: 389px;
+      width: 389px;
       max-height: 311px;
       margin: 0 auto 17px;
     }
@@ -541,7 +611,7 @@
       line-height: 21px;
     }
     &__image {
-      max-width: 333px;
+      width: 333px;
       max-height: 304px;
       margin: 0 auto 25px;
     }
@@ -558,7 +628,7 @@
       margin-bottom: 75px;
     }
     &__image {
-      height: 300px;
+      max-height: 300px;
     }
     &__title {
       font-size: 24px;
@@ -571,6 +641,52 @@
     &__price {
       width: 205px;
       margin: 0 auto;
+    }
+  }
+  .contacts {
+    padding-bottom: 145px;
+    &__title {
+      margin-bottom: 83px;
+    }
+    &__image {
+      height: 322px;
+    }
+    &__text {
+      margin: 34px 0 60px;
+    }
+    &__subscribe {
+      max-width: 511px;
+      border: 1px solid #8f95a5;
+      border-radius: 10px;
+    }
+    &__input {
+      height: 60px;
+      width: 318px;
+      padding: 20px 10px 20px 25px;
+      border: none;
+      border-radius: inherit;
+      outline: none;
+      font-size: 13px;
+      line-height: 19px;
+      margin-right: 0;
+      &::placeholder {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+    &__btn {
+      height: 60px;
+      width: 193px;
+      border: none;
+      border-radius: inherit;
+      &:hover {
+        background-color: #263238;
+        color: #fff;
+      }
+    }
+    &__btn-text {
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
@@ -741,7 +857,7 @@
       margin-bottom: 63px;
     }
     &__image {
-      height: 250px;
+      max-height: 250px;
     }
     &__title {
       font-size: 18px;
@@ -762,6 +878,47 @@
       font-size: 14px;
       line-height: 21px;
       margin-left: 4px;
+    }
+  }
+  .contacts {
+    padding-bottom: 57px;
+    &__title {
+      margin-bottom: 38px;
+    }
+    &__image {
+      height: 230px;
+    }
+    &__text {
+      margin: 38px 0 31px;
+    }
+    &__subscribe {
+      flex-direction: column;
+      max-width: auto;
+      border: none;
+      border-radius: inherit;
+    }
+    &__input {
+      height: 50px;
+      width: 100%;
+      padding: 16px 15px 16px 26px;
+      border: 1px solid #8f95a5;
+      border-radius: 5px;
+      margin-bottom: 17px;
+      font-size: 12px;
+      line-height: 18px;
+      &::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    &__btn {
+      width: 100%;
+      border: 1px solid #8f95a5;
+      border-radius: 5px;
+    }
+    &__btn-text {
+      font-size: 14px;
+      line-height: 21px;
     }
   }
 }
