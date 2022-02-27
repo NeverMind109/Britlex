@@ -29,7 +29,10 @@
           <nav class="menu col-md-7">
             <ul class="menu-list">
               <li class="menu-list__item">
-                <a class="menu-list__item logo menu__logo" href="#home">
+                <a
+                  class="menu-list__item logo menu__logo scroll-to"
+                  href="#home"
+                >
                   <img
                     class="logo__img"
                     src="images/logo.svg"
@@ -40,19 +43,21 @@
                 </a>
               </li>
               <li class="menu-list__item">
-                <a href="#home" class="menu-list__link">Home</a>
+                <a href="#home" class="menu-list__link scroll-to">Home</a>
               </li>
               <li class="menu-list__item">
-                <a href="#skills" class="menu-list__link">Skills</a>
+                <a href="#skills" class="menu-list__link scroll-to">Skills</a>
               </li>
               <li class="menu-list__item">
-                <a href="#about" class="menu-list__link">About Us</a>
+                <a href="#about" class="menu-list__link scroll-to">About Us</a>
               </li>
               <li class="menu-list__item">
-                <a href="#pricing" class="menu-list__link">Pricing</a>
+                <a href="#pricing" class="menu-list__link scroll-to">Pricing</a>
               </li>
               <li class="menu-list__item">
-                <a href="#contacts" class="menu-list__link">Contacts</a>
+                <a href="#contacts" class="menu-list__link scroll-to"
+                  >Contacts</a
+                >
               </li>
               <li class="menu-list__item menu__register">
                 <button class="header__btn menu-list__btn" type="button">
@@ -64,7 +69,11 @@
           </nav>
           <div class="menu__mobile-layout"></div>
           <div class="menu__mobile d-flex justify-content-end d-md-none col-3">
-            <button class="menu__mobile-btn" type="button">
+            <button
+              class="menu__mobile-btn"
+              type="button"
+              aria-label="Mobile Menu"
+            >
               <div class="menu__mobile-btn-line"></div>
               <div class="menu__mobile-btn-line"></div>
               <div
@@ -344,20 +353,50 @@
                 English test.Sign up to our newsletter for learning tips and
                 free resources
               </p>
-              <div class="contacts__subscribe">
+              <form class="contacts__subscribe" action="#">
+                <label for="email" class="contacts__label"></label>
                 <input
                   class="contacts__input"
                   type="email"
+                  id="email"
                   placeholder="Enter Your E-mail"
+                  required
+                  minlength="6"
                 />
                 <button class="contacts__btn" type="submit">
                   <div class="contacts__btn-text">Subscribe</div>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div
+          class="row footer__row d-flex justify-content-between align-items-center"
+        >
+          <a class="logo col-3" href="#home">
+            <img
+              class="logo__img"
+              src="images/Logo.svg"
+              alt="Logo"
+              width="106"
+              height="54"
+            />
+          </a>
+          <ul class="footer__list d-flex justify-content-end col-8">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms and Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="js/main.min.js"></script>
   </body>

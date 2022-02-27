@@ -14,4 +14,17 @@ $(function () {
     $("body").removeClass("overflow-hidden");
     $(".menu__mobile-layout").removeClass("menu__mobile-layout--active");
   }
+
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 60,
+        },
+        800
+      );
+  });
 });

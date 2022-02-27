@@ -1,0 +1,28 @@
+.footer {
+  padding: 31px 0 64px;
+  border-top: 1px solid #c4c4c4;
+  &__item {
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 26px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #8f95a5;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 9px;
+      }
+    }
+  }
+  &__link {
+    font-size: 24px;
+    line-height: 36px;
+    &:hover {
+      color: #263238;
+    }
+  }
+}
