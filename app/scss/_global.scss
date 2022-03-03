@@ -86,13 +86,13 @@ body {
   &__logo {
     display: none;
   }
-  &__close-button {
+  &__close {
     display: none;
   }
   &__register {
     display: none;
   }
-  &__mobile-btn {
+  &-mobile {
     display: flex;
     flex-direction: column;
     width: 30px;
@@ -101,7 +101,8 @@ body {
     background-color: transparent;
     padding: 0;
     cursor: pointer;
-    &-line {
+    &__line {
+      display: block;
       width: 30px;
       height: 3px;
       background: #39515e;
@@ -113,7 +114,7 @@ body {
       }
     }
   }
-  &__mobile-layout {
+  &-mobile-layout {
     display: none;
     position: absolute;
     z-index: 5;

@@ -20,7 +20,7 @@
           <a class="logo col-6 col-sm-4 col-md-2" href="#home">
             <img
               class="logo__img"
-              src="images/Logo.svg"
+              src="images/logo.svg"
               alt="Logo"
               width="106"
               height="54"
@@ -60,31 +60,39 @@
                 >
               </li>
               <li class="menu-list__item menu__register">
-                <button class="header__btn menu-list__btn" type="button">
+                <button
+                  class="header__btn menu-list__btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#talkModal"
+                >
                   <span class="header__btn-text">Let's Talk</span>
                 </button>
               </li>
-              <div class="menu__close-button"></div>
+              <li class="menu__close">
+                <span class="menu__close-button"></span>
+              </li>
             </ul>
           </nav>
-          <div class="menu__mobile-layout"></div>
-          <div class="menu__mobile d-flex justify-content-end d-md-none col-3">
-            <button
-              class="menu__mobile-btn"
-              type="button"
-              aria-label="Mobile Menu"
-            >
-              <div class="menu__mobile-btn-line"></div>
-              <div class="menu__mobile-btn-line"></div>
-              <div
-                class="menu__mobile-btn-line menu__mobile-btn-line--short"
-              ></div>
-            </button>
-          </div>
+          <button
+            class="menu-mobile d-flex justify-content-end d-md-none col-3"
+            type="button"
+            aria-label="Mobile Menu"
+          >
+            <span class="menu-mobile__line"></span>
+            <span class="menu-mobile__line"></span>
+            <span class="menu-mobile__line menu-mobile__line--short"></span>
+          </button>
+          <div class="menu-mobile-layout"></div>
           <div
             class="header__button d-none d-md-flex justify-content-end col-md-3"
           >
-            <button class="header__btn" type="button">
+            <button
+              class="header__btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#talkModal"
+            >
               <span class="header__btn-text">Let's Talk</span>
             </button>
           </div>
@@ -94,13 +102,18 @@
         <section class="hero">
           <div class="row d-flex justify-content-between align-items-center">
             <div class="hero__information col-sm-6 order-sm-o order-1">
-              <h1 class="hero__title">Learn Any&nbspForeign Language</h1>
+              <h1 class="hero__title">Learn Any&nbsp;Foreign Language</h1>
               <p class="hero__text">
                 With our teachers who write a program for each student, you will
                 be able to make your first sketch after the first lesson.
               </p>
               <div class="hero__button">
-                <button class="hero__btn" type="button">
+                <button
+                  class="hero__btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registrationModal"
+                >
                   <span class="hero__btn-text">Get started</span>
                 </button>
               </div>
@@ -119,7 +132,7 @@
         <section class="skills" id="skills">
           <h2 class="section-title skills__title">Skills</h2>
           <div class="skills-cards">
-            <div class="skills-card skills-card-1">
+            <div class="card skills-card skills-card-1">
               <div class="skills-card__image">
                 <img
                   class="skills-card__img"
@@ -129,7 +142,7 @@
                   height="390"
                 />
               </div>
-              <div class="skills-card__body">
+              <div class="card-body skills-card__body">
                 <h5 class="skills-card__title">Speaking</h5>
                 <p class="skills-card__text">
                   Improve your English skills and confidence.Live classes and
@@ -142,10 +155,12 @@
                   high-quality courses and resources – all designed for adult
                   language learners.
                 </p>
+              </div>
+              <div class="card-footer skills-card__footer">
                 <a class="skills-card__btn" href="#">Learn more</a>
               </div>
             </div>
-            <div class="skills-card skills-card-2">
+            <div class="card skills-card skills-card-2">
               <div class="skills-card__image">
                 <img
                   class="skills-card__img"
@@ -155,17 +170,19 @@
                   height="293"
                 />
               </div>
-              <div class="skills-card__body">
+              <div class="card-body skills-card__body">
                 <h5 class="skills-card__title">Writing</h5>
                 <p class="skills-card__text">
                   One of the most important and extensive areas of natural
                   science, the science that studies substances, also their
                   composition.
                 </p>
+              </div>
+              <div class="card-footer skills-card__footer">
                 <a class="skills-card__btn" href="#">Learn more</a>
               </div>
             </div>
-            <div class="skills-card skills-card-3">
+            <div class="card skills-card skills-card-3">
               <div class="skills-card__image">
                 <img
                   class="skills-card__img"
@@ -175,16 +192,18 @@
                   height="247"
                 />
               </div>
-              <div class="skills-card__body">
+              <div class="card-body skills-card__body">
                 <h5 class="skills-card__title">Reading</h5>
                 <p class="skills-card__text">
                   Perception and response actions of the user resulting from the
                   use and/or upcoming use of the product, system or service.
                 </p>
+              </div>
+              <div class="card-footer skills-card__footer">
                 <a class="skills-card__btn" href="#">Learn more</a>
               </div>
             </div>
-            <div class="skills-card skills-card-4">
+            <div class="card skills-card skills-card-4">
               <div class="skills-card__image">
                 <img
                   class="skills-card__img d-flex order-md-1"
@@ -194,7 +213,7 @@
                   height="255"
                 />
               </div>
-              <div class="skills-card__body">
+              <div class="card-body skills-card__body">
                 <h5 class="skills-card__title">Listening</h5>
                 <p class="skills-card__text">
                   Here you can find activities to practise your listening
@@ -235,7 +254,7 @@
                 </div>
                 <div class="about__column d-flex flex-column col-sm-5 col-md-4">
                   <span class="about__column-number align-items-center">6</span>
-                  <span class="about__column-text">Foreign&nbsplanguages</span>
+                  <span class="about__column-text">Foreign&nbsp;languages</span>
                 </div>
               </div>
             </div>
@@ -253,10 +272,10 @@
         <section class="pricing" id="pricing">
           <h2 class="section-title pricing__title">Pricing</h2>
           <div
-            class="row d-flex justify-content-sm-between align-items-sm-stretch flex-sm-row flex-column align-items-center"
+            class="card-group row d-flex justify-content-sm-between align-items-sm-stretch flex-sm-row flex-column align-items-center"
           >
             <div
-              class="pricing-card pricing-card-1 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+              class="card pricing-card pricing-card-1 d-flex flex-column justify-content-stretch col-sm-4 col-12"
             >
               <div class="pricing-card__image">
                 <img
@@ -267,12 +286,14 @@
                   height="282"
                 />
               </div>
-              <h5 class="pricing-card__title">Self-study online course</h5>
-              <p class="pricing-card__text">
-                Start learning English online in live classes with qualified EC
-                teachers and students from all over the world.
-              </p>
-              <div class="pricing-card__price">
+              <div class="card-body pricing-card__body">
+                <h5 class="pricing-card__title">Self-study online course</h5>
+                <p class="pricing-card__text">
+                  Start learning English online in live classes with qualified
+                  EC teachers and students from all over the world.
+                </p>
+              </div>
+              <div class="card-footer pricing-card__price">
                 <span class="pricing-card__period"
                   >£5.99
                   <span class="pricing-card__value">per month</span></span
@@ -280,7 +301,7 @@
               </div>
             </div>
             <div
-              class="pricing-card pricing-card-2 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+              class="card pricing-card pricing-card-2 d-flex flex-column justify-content-stretch col-sm-4 col-12"
             >
               <div class="pricing-card__image">
                 <img
@@ -291,11 +312,16 @@
                   height="237"
                 />
               </div>
-              <h5 class="pricing-card__title">Live online classes</h5>
-              <p class="pricing-card__text">
-                Interactive group classes with expert teachers. Free 7-day trial
-              </p>
-              <div class="pricing-card__price">
+              <div class="card-body pricing-card__body">
+                <h5 class="pricing-card__title pricing-card__title--wide">
+                  Live online classes
+                </h5>
+                <p class="pricing-card__text">
+                  Interactive group classes with expert teachers. Free 7-day
+                  trial
+                </p>
+              </div>
+              <div class="card-footer pricing-card__price">
                 <span class="pricing-card__period"
                   >£12.99
                   <span class="pricing-card__value">per month</span></span
@@ -303,7 +329,7 @@
               </div>
             </div>
             <div
-              class="pricing-card pricing-card-3 d-flex flex-column justify-content-stretch col-sm-4 col-12"
+              class="card pricing-card pricing-card-3 d-flex flex-column justify-content-stretch col-sm-4 col-12"
             >
               <div class="pricing-card__image">
                 <img
@@ -314,12 +340,16 @@
                   height="281"
                 />
               </div>
-              <h5 class="pricing-card__title">Personal Tuition</h5>
-              <p class="pricing-card__text">
-                Online one-to-one English tutoring – enjoy our first session for
-                only $1
-              </p>
-              <div class="pricing-card__price">
+              <div class="card-body pricing-card__body">
+                <h5 class="pricing-card__title pricing-card__title--wide">
+                  Personal Tuition
+                </h5>
+                <p class="pricing-card__text">
+                  Online one-to-one English tutoring – enjoy our first session
+                  for only $1
+                </p>
+              </div>
+              <div class="card-footer pricing-card__price">
                 <span class="pricing-card__period"
                   >£20.99
                   <span class="pricing-card__value">per month</span></span
@@ -353,7 +383,11 @@
                 English test.Sign up to our newsletter for learning tips and
                 free resources
               </p>
-              <form class="contacts__subscribe" action="#">
+              <form
+                class="contacts__subscribe needs-validation"
+                action="#"
+                novalidate
+              >
                 <label for="email" class="contacts__label"></label>
                 <input
                   class="contacts__input"
@@ -363,8 +397,11 @@
                   required
                   minlength="6"
                 />
+                <div class="invalid-tooltip contacts__tooltip">
+                  Please, enter your email
+                </div>
                 <button class="contacts__btn" type="submit">
-                  <div class="contacts__btn-text">Subscribe</div>
+                  <span class="contacts__btn-text">Subscribe</span>
                 </button>
               </form>
             </div>
@@ -378,7 +415,7 @@
           <a class="logo col-3" href="#home">
             <img
               class="logo__img"
-              src="images/Logo.svg"
+              src="images/logo.svg"
               alt="Logo"
               width="106"
               height="54"
@@ -397,6 +434,254 @@
           </ul>
         </div>
       </footer>
+      <div
+        class="modal modal__register fade"
+        id="registrationModal"
+        aria-hidden="true"
+        aria-labelledby="registrationModalLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registrationModalLabel2">
+                Registration
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation" action="#" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Enter your name</label>
+                  <input type="text" class="form-control" id="name" required />
+                  <div class="invalid-feedback">Please, enter your name</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">
+                    Enter your email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    required
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                  <div class="invalid-feedback">Please, enter your email</div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword1"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please, enter your password
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword2" class="form-label"
+                    >Repeat your password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword2"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please, repeat your password
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="Check1"
+                    required
+                  />
+                  <label class="form-check-label modal-check-text" for="Check1"
+                    >I accept the
+                    <a class="modal-link" href="#">terms of use of the site</a>
+                    and
+                    <a class="modal-link" href="#"
+                      >the rules for the processing of personal data</a
+                    ></label
+                  >
+                  <div class="invalid-feedback">
+                    You should accept the rules
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-prime">Register</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-second"
+                data-bs-target="#loginModal"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Already registered?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal modal__login fade"
+        id="loginModal"
+        aria-hidden="true"
+        aria-labelledby="registrationModalLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registrationModalLabel2">Sign In</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation" action="#" novalidate>
+                <div class="mb-3">
+                  <label for="InputEmail2" class="form-label"
+                    >Your Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="InputEmail2"
+                    required
+                  />
+                  <div class="invalid-feedback">Please, enter your email</div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword3" class="form-label"
+                    >Your Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword3"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please, enter your password
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="Check2" />
+                  <label class="form-check-label" for="Check2"
+                    >Remember me</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-prime">Login</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-second"
+                data-bs-target="#registrationModal"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal modal__talk fade"
+        id="talkModal"
+        tabindex="-1"
+        aria-labelledby="talkModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="talkModalLabel">
+                Ask us any question and we will call you back
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form class="needs-validation" action="#" novalidate>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Your Name:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="recipient-name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please, enter your name</div>
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-tel" class="col-form-label"
+                    >Your Phone Number:</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="recipient-tel"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please, enter your phone number
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"
+                    >Your Question:</label
+                  >
+                  <textarea
+                    class="form-control modal-message"
+                    id="message-text"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-second"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-prime">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/main.min.js"></script>
   </body>

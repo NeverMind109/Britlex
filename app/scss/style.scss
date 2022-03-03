@@ -1,7 +1,7 @@
 @import "_vars.scss";
 @import "_libs.scss";
 @import "_fonts.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "_global.scss";
 @import "_blocks/_header.scss";
 @import "_blocks/_hero.scss";
@@ -10,4 +10,5 @@
 @import "_blocks/_pricing.scss";
 @import "_blocks/_contacts.scss";
 @import "_blocks/_footer.scss";
+@import "_modal.scss";
 @import "_media.scss";

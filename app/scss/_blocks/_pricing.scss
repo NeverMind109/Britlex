@@ -6,6 +6,8 @@
 }
 .pricing-card {
   max-width: 400px;
+  border: none;
+  border-radius: 0;
   &__image {
     display: flex;
     justify-content: center;
@@ -20,8 +22,7 @@
     object-fit: contain;
   }
   &__body {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
   }
   &__title {
     font-weight: 600;
@@ -37,8 +38,13 @@
   &__price {
     width: 240px;
     background: #eeeeee;
+    border: 0;
     border-radius: 5px;
     margin: auto 0 0;
+    padding: 0;
+    &:last-child {
+      border-radius: 0;
+    }
   }
   &__period {
     display: flex;

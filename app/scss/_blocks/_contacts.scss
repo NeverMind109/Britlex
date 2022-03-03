@@ -15,6 +15,7 @@
     word-wrap: break-word;
   }
   &__subscribe {
+    position: relative;
     display: flex;
     align-items: center;
     max-width: 730px;

@@ -76,6 +76,9 @@
         .skills-card__image {
           max-height: 260px;
         }
+        .skills-card__footer {
+          padding-bottom: 52px;
+        }
       }
       &-4 {
         .skills-card__body {
@@ -135,6 +138,9 @@
     &__title {
       font-size: 22px;
       line-height: 34px;
+      &--wide {
+        max-width: 70%;
+      }
     }
     &__text {
       margin: 14px 0 31px;
@@ -257,21 +263,24 @@
         color: #263238;
       }
     }
-    &__mobile-layout {
+    &-mobile-layout {
       &--active {
         display: flex;
       }
     }
-    &__close-button {
+    &__close {
       position: absolute;
+      display: flex;
+      top: 32px;
+      right: 24px;
+    }
+    &__close-button {
       display: flex;
       background: url("../images/close-button.svg") no-repeat;
       background-size: cover;
       background-position: center;
       width: 20px;
       height: 20px;
-      top: 32px;
-      right: 24px;
       cursor: pointer;
     }
     &__logo {
@@ -357,6 +366,9 @@
         .skills-card__image {
           max-height: 214px;
         }
+        .skills-card__footer {
+          padding-bottom: 37px;
+        }
       }
       &-2 {
         .skills-card__image {
@@ -375,7 +387,10 @@
         max-height: 220px;
       }
       &__body {
-        padding: 0 10px 30px 17px;
+        padding: 0 10px 0 17px;
+      }
+      &__footer {
+        padding: 0 0 27px 17px;
       }
       &__btn {
         font-size: 16px;
@@ -514,15 +529,10 @@
       line-height: 33px;
       padding: 19px 116px;
     }
-  }
-  .header {
-    padding: 39px 0 21px;
-  }
-  .menu {
-    &__mobile-btn {
+    &-mobile {
       width: 43px;
       height: 24px;
-      &-line {
+      &__line {
         width: 43px;
         height: 5px;
         margin-bottom: 5px;
@@ -531,6 +541,9 @@
         }
       }
     }
+  }
+  .header {
+    padding: 39px 0 21px;
   }
   .hero {
     padding-bottom: 96px;
@@ -585,6 +598,12 @@
         .skills-card__image {
           max-height: 190px;
         }
+        .skills-card__footer {
+          padding-bottom: 36px;
+        }
+        .skills-card__btn {
+          margin: 25px auto 0 0;
+        }
       }
       &-2 {
         grid-row: 1/2;
@@ -610,7 +629,10 @@
       &__body {
         height: 100%;
         margin-top: 0;
-        padding: 0 25px 36px 15px;
+        padding: 0 25px 0 15px;
+      }
+      &__footer {
+        padding: 0 0 36px 15px;
       }
       &__title {
         font-size: 18px;
@@ -667,6 +689,9 @@
     &__title {
       font-size: 24px;
       text-align: center;
+      &--wide {
+        max-width: 100%;
+      }
     }
     &__text {
       margin: 23px 0 30px;
@@ -699,7 +724,6 @@
       padding: 20px 10px 20px 25px;
       border: none;
       border-radius: inherit;
-      outline: none;
       font-size: 13px;
       line-height: 19px;
       margin-right: 0;
@@ -771,25 +795,23 @@
       line-height: 30px;
       padding: 17px 100px;
     }
-  }
-  .logo {
-    height: 36px;
-    &__img {
-      width: 71px;
-      height: 36px;
-    }
-  }
-  .menu {
-    &__mobile {
+    &-mobile {
       width: 34px;
       height: 19px;
-      &-line {
+      &__line {
         width: 34px;
         height: 4px;
         &--short {
           width: 24px;
         }
       }
+    }
+  }
+  .logo {
+    height: 36px;
+    &__img {
+      width: 71px;
+      height: 36px;
     }
   }
   .header {
@@ -833,6 +855,9 @@
         .skills-card__image {
           max-height: 220px;
         }
+        .skills-card__btn {
+          margin: 35px auto 0 0;
+        }
       }
       &-2 {
         .skills-card__image {
@@ -854,12 +879,15 @@
         }
       }
       &__body {
-        padding: 0 16px 45px;
+        padding: 0 16px 0;
       }
       &__text {
         font-size: 13px;
         line-height: 19px;
         margin-bottom: 0;
+      }
+      &__footer {
+        padding: 0 16px 45px;
       }
       &__btn {
         font-size: 14px;
@@ -955,13 +983,17 @@
       padding: 16px 15px 16px 26px;
       border: 1px solid #8f95a5;
       border-radius: 5px;
-      margin-bottom: 17px;
+      margin-bottom: 30px;
       font-size: 12px;
       line-height: 18px;
       &::placeholder {
         font-size: 12px;
         line-height: 18px;
       }
+    }
+    &__tooltip {
+      top: 35%;
+      left: 0;
     }
     &__btn {
       width: 100%;
