@@ -1,12 +1,13 @@
 .header {
   padding: 57px 0 65px;
   &__btn {
+    align-items: center;
     color: #000000;
     background-color: transparent;
     border: 2px solid #263238;
     border-radius: 5px;
     cursor: pointer;
-    padding: 17px 57px;
+    padding: 17px 55px;
     transition: all 0.5s;
     &:hover {
       background-color: #263238;
@@ -19,5 +20,6 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+    word-break: break-word;
   }
 }
