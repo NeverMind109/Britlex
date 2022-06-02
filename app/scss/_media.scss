@@ -211,6 +211,12 @@
 }
 // ≥768px
 @include media-breakpoint-down(md) {
+  .animate__animated {
+    animation: none !important;
+  }
+  .animated {
+    animation: none !important;
+  }
   body {
     font-size: 14px;
     line-height: 21px;

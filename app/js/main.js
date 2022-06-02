@@ -47,3 +47,5 @@ $(function () {
     });
   })();
 });
+
+new WOW().init();
