@@ -5,10 +5,9 @@
     line-height: 24px;
   }
   .logo {
-    height: 45px;
     &__img {
       width: 89px;
-      height: 45px;
+      height: 30px;
     }
   }
   .section-title {
@@ -754,12 +753,9 @@
     padding: 18px 0 15px;
     &__item {
       &:not(:last-child) {
-        padding-right: 15px;
+        padding-right: 0;
         &::after {
-          height: 5px;
-          width: 5px;
-          right: 5px;
-          top: 55%;
+          display: none;
         }
       }
     }
@@ -811,10 +807,8 @@
     }
   }
   .logo {
-    height: 36px;
     &__img {
       width: 71px;
-      height: 36px;
     }
   }
   .header {
@@ -1015,18 +1009,8 @@
     }
     &__list {
       justify-content: center !important;
+      text-align: center;
       margin-top: 15px;
-    }
-    &__item {
-      &:not(:last-child) {
-        padding-right: 10px;
-        &::after {
-          height: 4px;
-          width: 4px;
-          right: 3px;
-          top: 60%;
-        }
-      }
     }
     &__link {
       font-size: 11px;
